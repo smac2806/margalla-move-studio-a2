@@ -12,7 +12,7 @@ function ClassImage({ src, alt, type }) {
     )
   }
 
-  return <img src={src} alt={alt} loading="lazy" onError={() => setFailed(true)} />
+  return <img src={import.meta.env.BASE_URL + src} alt={alt} loading="lazy" onError={() => setFailed(true)} />
 }
 
 export default ClassImage
