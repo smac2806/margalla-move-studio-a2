@@ -10,9 +10,9 @@ Customers browse 12 classes, search and filter them, open a details page, build 
 check a calculated summary and reach a confirmation. All bookings are **simulated**: data is local, no payment is taken
 and nothing is sent anywhere.
 
-- GitHub: (add public repository link)
-- Deployment: (add public link)
-- Final commit: (add hash)
+- GitHub: https://github.com/smac2806/margalla-move-studio-a2
+- Deployment: https://smac2806.github.io/margalla-move-studio-a2/
+- Final commit: the latest commit on `main` (hash is listed in the report)
 
 ## Commands
 
@@ -69,7 +69,7 @@ Open "Demonstration controls" at the bottom of any page.
 - Seats booked in the app reduce the seats shown, but only for this browser.
 - The experience level is self-declared.
 - Filters reset on a full page reload (they are kept while navigating).
-- Hosting needs a single-page-app fallback: `public/_redirects` (Netlify) and `vercel.json` (Vercel) are included.
+- Hosting is GitHub Pages (`.github/workflows/deploy.yml`). Nested-route refreshes work through a copied `404.html`, so the browser console shows one 404 status line for that first request. `public/_redirects` and `vercel.json` are included for hosts with real rewrites.
 
 ## Testing
 
